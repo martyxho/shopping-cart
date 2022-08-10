@@ -48,7 +48,7 @@ img.bg {
 #content {
   display: grid;
   padding: 20px;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .card {
