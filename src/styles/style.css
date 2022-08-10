@@ -13,7 +13,7 @@ nav {
   position: relative;
 }
 
-#cart {
+#cart-pic {
   width: 30px;
 }
 
@@ -39,4 +39,43 @@ img.bg {
     left: 50%;
     margin-left: -981px;   /* 50% */
   }
+}
+
+#shop {
+  padding: 50px 200px 50px 200px;
+}
+
+#content {
+  display: grid;
+  padding: 20px;
+  grid-auto-flow: column;
+}
+
+.card {
+  padding: 20px 10px 10px 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 220px;
+  height: 320px;
+  display: grid;
+  justify-content: center;
+}
+
+.card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 500px;
+  background-color: white;
+}
+
+.hide {
+  display: none;
 }
