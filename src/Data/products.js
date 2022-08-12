@@ -19,9 +19,9 @@ import ugli from '../assets/ugli.webp';
 
 
 const products = [
-  {name: 'lemons', img: lemon, price: '$ 5.00'},
-  {name: 'oranges', img: orange, price: '$5.00'},
-  {name: 'limes', img: lime, price: '$5.00'},
+  {name: 'lemon', img: lemon, price: '$ 5.00'},
+  {name: 'orange', img: orange, price: '$5.00'},
+  {name: 'lime', img: lime, price: '$5.00'},
   {name: 'grapefruit', img: grapefruit, price: '$5.00'},
   {name: 'yuzu', img: yuzu, price: '$5.00'},
   {name: 'bitter orange', img: bitterOrange, price: '$5.00'},

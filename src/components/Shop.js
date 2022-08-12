@@ -1,11 +1,10 @@
 import ProductsBox from "./ProductsBox"
 import products from "../Data/products";
 
-function Shop() {
-
+function Shop({ addCart }) {
   return(
     <div id="shop">
-      <ProductsBox products={products}/>
+      <ProductsBox products={products} addCart={addCart}/>
     </div>
   )
 }

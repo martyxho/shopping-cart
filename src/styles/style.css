@@ -69,11 +69,28 @@ img.bg {
 
 #cart {
   position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 1;
+  top: 0px;
+  display: grid;
+  grid-template-rows: 1fr 4fr .7fr 1fr;
+  -webkit-box-align: center;
+  align-items: center;
   width: 500px;
-  background-color: white;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: right 0.85s ease-in-out 0s;
+  right: 0px;
+}
+
+#cart-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
 }
 
 .hide {
