@@ -1,11 +1,11 @@
 import CartContent from "./CartContent";
 
-function Cart({toggleCart, content}) {
+function Cart({toggleCart, content, increment, decrement}) {
   const createContents = () => {
     const contents = [];
     content.sort((a, b) => a.name.localeCompare(b.name));
-    content.forEach(e => {
-      const product = <CartContent product={e}/>;
+    content.forEach((e, i) => {
+      const product = <CartContent product={e} index={i} increment={increment} decrement={decrement}/>;
       contents.push(product);
     });
     return contents;

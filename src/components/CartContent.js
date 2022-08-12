@@ -1,4 +1,12 @@
-function CartContent({ product }) {
+function CartContent({ product, index, increment, decrement }) {
+  const incrementThis = () => {
+    increment(index);
+  };
+
+  const decrementThis = () => {
+    decrement(index);
+  };
+
   return (
     <div className="cartContent">
       <img src={product.img}/>
@@ -6,9 +14,12 @@ function CartContent({ product }) {
         <h3>{product.name}</h3>
         <p>{product.price}</p>
         <div>
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+          <button onClick={decrementThis}>-</button>
+          <span>{product.quantity}</span>
+          <button onClick={incrementThis}>+</button>
+        </div>
+        <div>
+          <button>Remove</button>
         </div>
       </div>
     </div>
