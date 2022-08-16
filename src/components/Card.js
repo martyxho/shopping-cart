@@ -2,12 +2,22 @@ function Card({ product, addCart }) {
   const handleClick = () => {
     addCart(product);
   }
+
+  const price = () => {
+    const num = product.price.toFixed(2);
+    return `$${num}`;
+  }
+
   return (
     <div className="card">
-      <img src={product.img} alt={product.name} />
+      <div className="img">
+        <img src={product.img} alt={product.name} />
+      </div>
       <div>
-        <h3>{product.name}</h3>
-        <p>{product.price}</p>
+        <div className="info">
+          <h3>{product.name}</h3>
+          <p>{price()}</p>
+        </div>
         <div>
           <button onClick={handleClick}>Add to cart</button>
         </div>

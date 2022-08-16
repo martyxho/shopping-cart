@@ -5,6 +5,7 @@
 
 body {
   z-index: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 nav {
@@ -48,23 +49,43 @@ img.bg {
 #content {
   display: grid;
   padding: 20px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 
 .card {
   padding: 20px 10px 10px 10px;
-  border: 2px solid black;
-  border-radius: 25px;
-  width: 220px;
-  height: 320px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
+.card .info {
+  padding: 7px 0px 7px 0px;
+}
+.card .img {
+  height: 15rem;
+}
+
 .card img {
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.card button {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 12px;
+}
+
+.card button:hover {
+  opacity: .8;
 }
 
 #cart {
@@ -73,24 +94,75 @@ img.bg {
   padding: 20px;
   z-index: 1001;
   top: 0px;
-  display: grid;
-  grid-template-rows: 1fr 4fr .7fr 1fr;
+  display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  width: 500px;
+  width: 33%;
   height: 100%;
   background-color: rgb(255, 255, 255);
-  transition: right 0.85s ease-in-out 0s;
+  align-items: flex-start;
+  justify-content: space-between;
   right: 0px;
+  padding: 4%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+#cart-wrapper {
+  width: 100%;
+}
+
+#cart #head {
+  font-size: 30px;
+  font-weight: 900;
+  padding: 45px 0 0;
+}
+
+#cart #cart-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#cart-bottom #total {
+  padding: 10px;
+  text-align: center;
+}
+
+#cart-bottom button{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+}
+#cart #total {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #cart-contents {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 10px;
   width: 100%;
-  overflow: auto;
-  height: 100%;
+  padding: 16px 0;
+}
+
+.cartContent {
+  display: flex;
+  padding: 16px 0 0;  
+}
+
+.cartDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;  
 }
 
 .cartContent img {

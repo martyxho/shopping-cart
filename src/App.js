@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Shop from './components/Shop';
 import Nav from './components/Nav';
 import Cart from './components/Cart';
+import uniqid from "uniqid";
 import './styles/style.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   useEffect(() => {
     cleanCart();
   });
+  
   const increment = (i) => {
     setCart(prev => {
       const current = [...prev];
@@ -34,6 +36,17 @@ function App() {
       current[i].quantity -= 1;
       return current;
     });
+  }
+
+  const onChange = (i, value) => {
+    const newCart = [...cart];
+    newCart[i].quantity = Number(value);
+    setCart(newCart);
+  }
+  
+  const remove = (i) => {
+    const newCart = cart.filter((e, index) => index !== i);
+    setCart(newCart);
   }
 
   const toggleCart = () => {
@@ -57,6 +70,7 @@ function App() {
       increment(i);
     } else {
       product.quantity = 1;
+      product.id = uniqid();
       setCart(prev => [...prev, product]);
     }
   }
@@ -64,8 +78,15 @@ function App() {
   return (
     <BrowserRouter>
       <div id="overlay" className="hide" onClick={toggleCart}/>
-      <Nav toggleCart={toggleCart}/>
-      <Cart toggleCart={toggleCart} content={cart} increment={increment} decrement={decrement}/>
+      <Nav toggleCart={toggleCart} content={cart}/>
+      <Cart 
+        toggleCart={toggleCart} 
+        content={cart} 
+        increment={increment} 
+        decrement={decrement}
+        onChange={onChange}
+        remove={remove}
+      />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Shop addCart={addToCart} />} />
