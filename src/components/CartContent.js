@@ -26,11 +26,13 @@ function CartContent({ product, index, onChange, remove }) {
 
   return (
     <div className="cartContent">
-      <img src={product.img}/>
+      <div className='cart-img'>
+        <img src={product.img}/>
+      </div>
       <div className="cartDetails">
         <h3>{product.name}</h3>
         <div className="cart-input">
-          <img src={minus} onClick={decrementThis} />
+            <img src={minus} onClick={decrementThis} />
           <input type='number' value={product.quantity} onChange={onChangeThis} />
           <img src={plus} onClick={incrementThis} />
         </div>
