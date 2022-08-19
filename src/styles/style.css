@@ -44,10 +44,6 @@ nav a:hover {
   font-size: 40px;
 }
 
-#store-name:hover {
-  color: #DECDF5;
-}
-
 #cart-div {
   font-size: 20px;
   font-weight: normal;
@@ -310,6 +306,8 @@ input {
   border: solid 1px gainsboro;
   width: 64px;
   text-align: center;
+  font-weight: 600;
+  font-size: .9rem;
 }
 
 input:focus {
