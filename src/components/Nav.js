@@ -8,13 +8,16 @@ function Nav({ toggleCart, content }) {
   }
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/shop">Shop</Link>
-      <div id='cart-div'>
-        {content.length > 0 &&
-          <div>{calcCount()}</div>
-        }
-        <img src={cart} id='cart-pic' onClick={toggleCart}/>
+      <Link to="/" id='store-name'>Citrus</Link>
+      <div id='nav-right'>
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+        <div id='cart-div'>
+          {content.length > 0 &&
+            <div>{calcCount()}</div>
+          }
+          <img src={cart} id='cart-pic' onClick={toggleCart}/>
+        </div>
       </div>
     </nav>
   )

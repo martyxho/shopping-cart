@@ -19,19 +19,19 @@ import ugli from '../assets/ugli.webp';
 
 
 const products = [
-  {name: 'lemon', img: lemon, price: 5},
-  {name: 'orange', img: orange, price: 5},
-  {name: 'lime', img: lime, price: 5},
-  {name: 'grapefruit', img: grapefruit, price: 5},
-  {name: 'yuzu', img: yuzu, price: 5},
-  {name: 'bitter orange', img: bitterOrange, price: 5},
-  {name: 'blood orange', img: bloodOrange, price: 5},
-  {name: 'calamansi', img: calamansi, price: 5},
-  {name: 'kumquat', img: kumquat, price: 5},
-  {name: 'mandarin', img: mandarin, price: 5},
-  {name: 'pomelo', img: pomelo, price: 5},
-  {name: 'satsuma', img: satsuma, price: 5},
-  {name: 'ugli fruit', img: ugli, price: 5},
+  {name: 'Lemon', img: lemon, price: 5},
+  {name: 'Orange', img: orange, price: 5},
+  {name: 'Lime', img: lime, price: 5},
+  {name: 'Grapefruit', img: grapefruit, price: 5},
+  {name: 'Yuzu', img: yuzu, price: 5},
+  {name: 'Bitter orange', img: bitterOrange, price: 5},
+  {name: 'Blood orange', img: bloodOrange, price: 5},
+  {name: 'Calamansi', img: calamansi, price: 5},
+  {name: 'Kumquat', img: kumquat, price: 5},
+  {name: 'Mandarin', img: mandarin, price: 5},
+  {name: 'Pomelo', img: pomelo, price: 5},
+  {name: 'Satsuma', img: satsuma, price: 5},
+  {name: 'Ugli fruit', img: ugli, price: 5},
 ]
 
 export default products;

@@ -21,22 +21,6 @@ function App() {
   useEffect(() => {
     cleanCart();
   });
-  
-  const increment = (i) => {
-    setCart(prev => {
-      const current = [...prev];
-      current[i].quantity += 1;
-      return current;
-    });
-  }
-
-  const decrement = (i) => {
-    setCart(prev => {
-      const current = [...prev];
-      current[i].quantity -= 1;
-      return current;
-    });
-  }
 
   const onChange = (i, value) => {
     const newCart = [...cart];
@@ -67,7 +51,7 @@ function App() {
     });
 
     if (inCart) {
-      increment(i);
+      onChange(i, cart[i].quantity + 1)
     } else {
       product.quantity = 1;
       product.id = uniqid();
@@ -82,8 +66,6 @@ function App() {
       <Cart 
         toggleCart={toggleCart} 
         content={cart} 
-        increment={increment} 
-        decrement={decrement}
         onChange={onChange}
         remove={remove}
       />

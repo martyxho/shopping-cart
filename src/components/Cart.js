@@ -1,6 +1,7 @@
 import CartContent from "./CartContent";
+import closeCircle from '../assets/close-circle.svg';
 
-function Cart({toggleCart, content, increment, decrement, onChange, remove}) {
+function Cart({toggleCart, content, onChange, remove}) {
 
   const calcTotal = () => {
     const prices = content.map(e => e.quantity * e.price);
@@ -17,9 +18,9 @@ function Cart({toggleCart, content, increment, decrement, onChange, remove}) {
   return (
     <div id='cart-hide' className="hide">
       <div id="cart">
-        <button onClick={toggleCart}>Close</button>
         <div id="cart-wrapper">
-          <div id="head">Your<br/>shopping<br/>bag</div>
+          <img src={closeCircle} id='close-cart' onClick={toggleCart}/>
+          <div id="head">Your<br/>shopping<br/>bag</div>  
           <div id="cart-contents">
             {content &&
               content.length > 0 &&

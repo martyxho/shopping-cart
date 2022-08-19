@@ -1,3 +1,6 @@
+import plus from '../assets/plus.svg';
+import minus from '../assets/minus.svg';
+
 function CartContent({ product, index, onChange, remove }) {
   const incrementThis = () => {
     onChange(index, product.quantity + 1);
@@ -26,10 +29,10 @@ function CartContent({ product, index, onChange, remove }) {
       <img src={product.img}/>
       <div className="cartDetails">
         <h3>{product.name}</h3>
-        <div>
-          <button onClick={decrementThis}>-</button>
+        <div className="cart-input">
+          <img src={minus} onClick={decrementThis} />
           <input type='number' value={product.quantity} onChange={onChangeThis} />
-          <button onClick={incrementThis}>+</button>
+          <img src={plus} onClick={incrementThis} />
         </div>
       </div>
       <div className="cartPrice">
