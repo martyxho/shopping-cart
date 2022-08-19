@@ -33,11 +33,24 @@ function App() {
     setCart(newCart);
   }
 
-  const toggleCart = () => {
-    const cart = document.getElementById('cart-hide');
+  const closeCart = () => {
+    const cart = document.getElementById('cart');
+    const root = document.getElementById('root');
     const overlay = document.getElementById('overlay');
-    cart.classList.toggle('hide');
-    overlay.classList.toggle('hide');
+    overlay.classList.remove('show');
+    setTimeout(() => root.removeChild(overlay), 600);
+    cart.classList.remove('show');
+  }
+
+  const openCart = () => {
+    const cart = document.getElementById('cart');
+    const root = document.getElementById('root');
+    const overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    overlay.onclick = closeCart;
+    root.appendChild(overlay);
+    setTimeout(() => overlay.classList.add('show'));
+    cart.classList.add('show');
   }
  
   const addToCart = (product) => {
@@ -61,10 +74,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div id="overlay" className="hide" onClick={toggleCart}/>
-      <Nav toggleCart={toggleCart} content={cart}/>
+      <Nav toggleCart={openCart} content={cart}/>
       <Cart 
-        toggleCart={toggleCart} 
+        toggleCart={closeCart} 
         content={cart} 
         onChange={onChange}
         remove={remove}

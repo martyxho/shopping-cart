@@ -16,7 +16,7 @@ function Cart({toggleCart, content, onChange, remove}) {
   }
 
   return (
-    <div id='cart-hide' className="hide">
+    <div id='cart-hide'>
       <div id="cart">
         <div id="cart-wrapper">
           <img src={closeCircle} id='close-cart' onClick={toggleCart}/>

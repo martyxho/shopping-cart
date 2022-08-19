@@ -12,11 +12,11 @@ function Nav({ toggleCart, content }) {
       <div id='nav-right'>
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
-        <div id='cart-div'>
+        <div id='cart-div' onClick={toggleCart}>
           {content.length > 0 &&
             <div>{calcCount()}</div>
           }
-          <img src={cart} id='cart-pic' onClick={toggleCart}/>
+          <img src={cart} id='cart-pic'/>
         </div>
       </div>
     </nav>

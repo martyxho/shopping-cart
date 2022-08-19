@@ -1,7 +1,12 @@
 import citrusBg from '../assets/citrushero.webp';
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    const home = document.getElementById('home');
+    setTimeout(() => home.classList.add('show'));
+  }, []);
 
   return (
     <div id="home">
