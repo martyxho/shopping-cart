@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.909617f8.css",
+    "main.js": "/static/js/main.399651cd.js",
+    "static/media/lime.jpg": "/static/media/lime.e9488d415d2c67be6bdd.jpg",
+    "static/media/calamansi.jpeg": "/static/media/calamansi.0318d96c8e09e67f0c37.jpeg",
+    "static/media/oranges.webp": "/static/media/oranges.3f55e801df45eb0a8571.webp",
+    "static/media/citrushero.webp": "/static/media/citrushero.c6cbbaf823bdf83c74d4.webp",
+    "static/media/satsuma.jpeg": "/static/media/satsuma.c38f4ba9ad8a68de5cec.jpeg",
+    "static/media/grapefruit.jpg": "/static/media/grapefruit.078c3ed1adcd25aa471f.jpg",
+    "static/media/bloodorange.webp": "/static/media/bloodorange.5d53cb8c5c5b5abae11d.webp",
+    "static/media/bitterorange.webp": "/static/media/bitterorange.2225bfacb89ba6e070a2.webp",
+    "static/media/pomelo.jpeg": "/static/media/pomelo.88885df83af77578c22e.jpeg",
+    "static/media/yuzu.jpg": "/static/media/yuzu.236df43fc998b5cf1d8e.jpg",
+    "static/media/lemons.jpg": "/static/media/lemons.9db79919727ffacf0aac.jpg",
+    "static/media/mandarin.webp": "/static/media/mandarin.762466f5e8c75c691b3f.webp",
+    "static/media/ugli.webp": "/static/media/ugli.1112bf30aa09d93707ef.webp",
+    "static/media/kumquat.jpg": "/static/media/kumquat.96464bd9d2c146ba6ca7.jpg",
+    "index.html": "/index.html",
+    "static/media/cart.svg": "/static/media/cart.61356b8ee12eb67b6900b35b86809179.svg",
+    "static/media/close-circle.svg": "/static/media/close-circle.ebad04c74af4fbac7c62dd1d3e20b3dc.svg",
+    "static/media/plus.svg": "/static/media/plus.3cffe9a515498593b8721ae7cc7955b0.svg",
+    "static/media/minus.svg": "/static/media/minus.a0101e53ed9ed4000e47dea69bb7e9d3.svg",
+    "main.909617f8.css.map": "/static/css/main.909617f8.css.map",
+    "main.399651cd.js.map": "/static/js/main.399651cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.909617f8.css",
+    "static/js/main.399651cd.js"
+  ]
+}
