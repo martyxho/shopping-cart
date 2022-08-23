@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.909617f8.css",
-    "main.js": "/shopping-cart/static/js/main.90b989cb.js",
+    "main.js": "/shopping-cart/static/js/main.cd0ed759.js",
     "static/media/lime.jpg": "/shopping-cart/static/media/lime.e9488d415d2c67be6bdd.jpg",
     "static/media/calamansi.jpeg": "/shopping-cart/static/media/calamansi.0318d96c8e09e67f0c37.jpeg",
     "static/media/oranges.webp": "/shopping-cart/static/media/oranges.3f55e801df45eb0a8571.webp",
@@ -22,10 +22,10 @@
     "static/media/plus.svg": "/shopping-cart/static/media/plus.3cffe9a515498593b8721ae7cc7955b0.svg",
     "static/media/minus.svg": "/shopping-cart/static/media/minus.a0101e53ed9ed4000e47dea69bb7e9d3.svg",
     "main.909617f8.css.map": "/shopping-cart/static/css/main.909617f8.css.map",
-    "main.90b989cb.js.map": "/shopping-cart/static/js/main.90b989cb.js.map"
+    "main.cd0ed759.js.map": "/shopping-cart/static/js/main.cd0ed759.js.map"
   },
   "entrypoints": [
     "static/css/main.909617f8.css",
-    "static/js/main.90b989cb.js"
+    "static/js/main.cd0ed759.js"
   ]
 }
