@@ -8,4 +8,4 @@ Uses react router for client side routing.
 
 Has CSS transitions. 
 
-Live site: https://martyxho.github.io/shopping-cart/
+Live Site: https://martyxho.github.io/shopping-cart/
